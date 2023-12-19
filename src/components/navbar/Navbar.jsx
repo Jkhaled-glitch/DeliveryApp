@@ -54,10 +54,10 @@ const Navbar = () => {
         let list = [];
         try {
          
-          const querySnapshot = await getDocs(collection(db, "HouseCollection"));
+          const querySnapshot = await getDocs(collection(db, "NotificationCollection"));
           querySnapshot.forEach((doc) => {
-            let authorized= doc.data().authorized;
-            !authorized && list.push({ id: doc.id });
+            let isVue= doc.data().vue;
+            !isVue && list.push({ id: doc.id });
           });
           setNotifications(list.length);
         } catch (err) {
@@ -93,8 +93,8 @@ const Navbar = () => {
           <div className="item">
             
           </div>
-          {
-            /*
+          
+            
           <div className="item">
           <NotificationsNoneOutlinedIcon className="icon" />
             {
@@ -112,8 +112,8 @@ const Navbar = () => {
             
           </div>
 
-          */
-          }
+          
+          
           <div className="item">
          
           </div>

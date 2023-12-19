@@ -265,7 +265,7 @@ await setDoc(doc(db, "HouseCollection", documentUid), {
           </div>
           
         </div>
-        <div style={{display: (status?"flex":"none") }}  className="status bottom"><h5>{status}</h5></div>
+        <div style={{display: (status?"flex":"none") }}  className="status-message bottom"><h5>{status}</h5></div>
       </div>
      
     </div>

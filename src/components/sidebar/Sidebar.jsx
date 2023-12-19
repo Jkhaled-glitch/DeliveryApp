@@ -90,8 +90,6 @@ const Sidebar = () => {
 
 
 
-          {
-            /*
             
           <Link to="/admins/notifications" style={{ textDecoration: "none" }}>
           <li>
@@ -99,8 +97,7 @@ const Sidebar = () => {
             <span>Notifications</span>
           </li>
           </Link>
-          */
-          }
+        
 
 
           <p className="title">AUTHENTIFICATIONS</p>

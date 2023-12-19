@@ -76,7 +76,13 @@ export const tacheColumns = [
   },
 ];
 
+export const  notificationColumns =[
 
+  { field: "type", headerName: "Event Type", width: 100 },
+  { field: "date",headerName: "Date",width: 130,},
+  { field: "task", headerName: "taskName", width: 130 },
+  { field: "description",headerName: "task Description",width: 230,},
+];
 
 
 
